@@ -404,7 +404,7 @@ class MeetingTranscriptPDF:
             ('FONTNAME', (0, 1), (-1, -1), 'Arial'),
             ('FONTSIZE', (0, 1), (-1, -1), 10),
             
-            ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+            ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),   # <-- FIXED: colours → colors
             ('BOX', (0, 0), (-1, -1), 1, colors.black),
             
             ('LEFTPADDING', (0, 0), (-1, -1), 6),
@@ -448,7 +448,7 @@ class MeetingTranscriptPDF:
             ('FONTSIZE', (0, 0), (-1, -1), 11),
             ('BOTTOMPADDING', (0, 0), (-1, -1), 10),
             ('TOPPADDING', (0, 0), (-1, -1), 10),
-            ('GRID', (0, 0), (-1, -1), 1, colors.grey),1
+            ('GRID', (0, 0), (-1, -1), 1, colors.grey),   # already correct
         ]))
         
         summary_table.hAlign = 'CENTER'
@@ -484,7 +484,7 @@ class MeetingTranscriptPDF:
                 ('FONTNAME', (0, 0), (-1, 0), 'Arial-Bold'),
                 ('FONTNAME', (0, 1), (-1, -1), 'Arial'),
                 ('FONTSIZE', (0, 0), (-1, -1), 11),
-                ('GRID', (0, 0), (-1, -1), 0.5, colours.grey),
+                ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),   # <-- FIXED: colours → colors
                 ('BACKGROUND', (0, 1), (-1, -1), colors.white),
                 ('ROWBACKGROUNDS', (1, 1), (-1, -1), [colors.white, colors.HexColor('#F8FAFC')]),
             ]))
