@@ -1,0 +1,56 @@
+# .gitignore for MY Meeting Sense
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env*
+
+# Sensitive keys and config
+*.env
+.env*
+config.json
+*.key
+*.pem
+*.crt
+
+# Model files
+model_cache/
+*.ckpt
+*.h5
+*.pt
+*.onnx
+
+# Output and temp files
+output/
+temp/
+*.log
+*.tmp
+*.bak
+
+# Audio and image files
+voices/
+Faces/
+*.wav
+*.jpeg
+*.jpg
+*.png
+
+# Office documents
+*.docx
+*.xlsx
+*.pptx
+
+# Ignore conversation and summary files
+conversation.json
+*.pdf
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Add more patterns as needed for other sensitive or generated files
