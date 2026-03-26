@@ -4,6 +4,15 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+ENV/
+.venv/
+venv/
+env/
 *.env
 .env*
 
@@ -21,6 +30,13 @@ model_cache/
 *.h5
 *.pt
 *.onnx
+*.pkl
+*.joblib
+
+# Vector DB / indexes (generated)
+*.faiss
+*.index
+faiss_index/
 
 # Output and temp files
 output/
@@ -33,9 +49,20 @@ temp/
 voices/
 Faces/
 *.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
 *.jpeg
 *.jpg
 *.png
+
+# Video files
+*.webm
+*.mov
+*.mp4
+*.avi
+*.mkv
 
 # Office documents
 *.docx
@@ -45,6 +72,11 @@ Faces/
 # Ignore conversation and summary files
 conversation.json
 *.pdf
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
 
 # VS Code
 .vscode/
